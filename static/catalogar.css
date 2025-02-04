@@ -1,0 +1,154 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, white;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    background-color: #0097b2;
+    align-items: center;
+    justify-content:center;
+    }
+
+/* barra de navegação*/
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
+
+.nav-link {
+    color: white; / Define a cor da fonte dos links /
+    font-size: 50px;
+    margin: 15px 20px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    }
+.nav-link:hover {
+    color: black; /* Cor ao passar o mouse */
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-decoration-thickness: 1.2px; /* Espessura do sublinhado */
+    text-underline-offset: 15px; /* Distância entre o texto e o sublinhado */
+    }
+
+ul {
+    list-style-type: none; /* Remove os pontos */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    }
+        
+    
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}    
+
+
+/*conteudo formulário*/
+.styled-input {
+
+    border: 5px solid white;
+    border-radius: 10px;
+}
+
+.search-button {
+
+    cursor: pointer;          /* Cursor de mãozinha ao passar o mouse */
+    border: 5px solid  white;
+    border-radius: 4px;
+    background-color: white;
+    text-decoration-color: black; /* Bordas arredondadas */
+
+}
+
+.search-button:hover {
+    background-color: rgb(255, 253, 137);
+    font: white, solid;
+}
+
+div {
+08   width: 100px;
+09   height:100px;
+10   border-width:2px;
+11   border-color:black;
+12   border-style:solid;
+13   display:flex;
+}
+
+.label {
+display: block;
+width: 10%;
+float:left;
+padding-left: 3%;
+padding-right: 3%;
+}
+
+label{
+    color: white;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    z-index: 1050; 
+}
+
+.modal-dialog {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    height: 100%; 
+    margin: 0; 
+}
+
+.modal-content {
+    border-radius: 0.5rem; 
+    background-color: #ffffff; 
+    color: #000000; 
+    border: 1px solid #0097B2; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.modal-header {
+    background-color: #0097B2; 
+    color: #ffffff; 
+    border-bottom: 1px solid #0097B2; 
+    border-radius: 0.5rem 0.5rem 0 0; 
+}
+
+.modal-body {
+    padding: 1.25rem; 
+    font-size: 1rem;
+}
+
+.modal-footer {
+    background-color: #ffffff;
+    border-top: 1px solid #0097B2; 
+    padding: 1rem; 
+}
+
+.btn-outline-info {
+    color: #0097B2;
+    border-color: #0097B2; 
+}
+
+.btn-outline-info:hover {
+    background-color: #0097B2; 
+    color: #ffffff; 
+}
